@@ -5,7 +5,7 @@ var prefix = ("!")
 var randnum = 0;
 var prenom = (" ");
 
-bot.login("token");
+bot.login("NDUwMzYzOTUwNDg4NjE2OTYw.DeyJpg.QATvi3zTMjWF2HDU5nhsXx1h5VA");
 
 bot.on('ready', function() {
     console.log("Connected");
