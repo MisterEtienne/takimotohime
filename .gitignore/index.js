@@ -19,7 +19,7 @@ bot.on('message', message => {
     if(message.author.id == "339131189791031297" || message.author.id == "198046346798825472" || message.author.id == "272724654102282240"){
         
         if(message.author.id == "198046346798825472"){
-            prenom = ("Miss YukiHime");
+            prenom = ("Cassandra");
         }
         
         if(message.author.id == "339131189791031297"){
