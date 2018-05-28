@@ -14,7 +14,7 @@ bot.on('ready', function() {
 bot.on('message', message => {
 
 
-    if(message.content.startsWith(prefix + "love")){
+    if(message.content.startsWith(prefix + "déclaration")){
         random();
     if(message.author.id == "339131189791031297" || message.author.id == "198046346798825472" || message.author.id == "272724654102282240"){
         
