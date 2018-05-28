@@ -15,20 +15,21 @@ bot.on('message', message => {
 
 
     if(message.content.startsWith(prefix + "déclaration")){
-        random();
+        random(); 
+        let args = message.content.split(``).slice(1);
+        
     if(message.author.id == "339131189791031297" || message.author.id == "198046346798825472" || message.author.id == "272724654102282240"){
         
-        if(message.author.id == "198046346798825472"){
-            prenom = ("Cassandra");
-        }
+            if (!args){
+            args = null;
+             }
+       
+            message.channel.send(args.join( ``))
         
-        if(message.author.id == "339131189791031297"){
-            prenom = ("Maëva");
-        }
-
-        if(message.author.id == "272724654102282240"){
-            prenom = ("Lionel");
-        }
+            }else{
+            return message.reply(":comet: Vous n'avez pas la permission de faire cette commande. Seul mon créateur le peut");
+            }
+            
 
         if (randnum == 1){
             message.channel.send(prenom + ", Je pense constamment à toi ! ton image est gravée pour toujours dans mon cœur. Aujourd'hui, je me trouve à la place où tu marchais hier, et je cherche sur le sable la trace de tes pas. ")
