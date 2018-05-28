@@ -24,7 +24,7 @@ bot.on('message', message => {
             args = null;
              }
        
-            message.channel.send(args.join( ``))
+            args = prenom
         
             }else{
             return message.reply(":comet: Vous n'avez pas la permission de faire cette commande. Seul mon créateur le peut");
